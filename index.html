@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday 🎂</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- MUSIK -->
+<audio id="music" loop>
+    <source src="musik.mp3" type="audio/mpeg">
+</audio>
+
+<!-- BACKGROUND -->
+<div class="bg"></div>
+<div class="dark"></div>
+
+<!-- MUSIC -->
+<button class="music" onclick="musicToggle()" id="musicButton">
+    🎵
+</button>
+
+
+<!-- ================= OPENING ================= -->
+
+<section class="opening" id="opening">
+
+    <div class="opening-content">
+
+        <p class="mini">A SPECIAL SURPRISE FOR YOU</p>
+
+        <h1>Hey, Birthday Star! ✨</h1>
+
+        <p>
+            Ada sesuatu yang spesial untuk kamu.
+            Jangan dibuka sebelum siap... 🎁
+        </p>
+
+        <div class="present" onclick="openWebsite()">
+
+            <div class="lid"></div>
+            <div class="box"></div>
+            <div class="ribbon"></div>
+
+        </div>
+
+        <p class="click">
+            Tap the gift 🎁
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= MAIN ================= -->
+
+<main id="main" class="hidden">
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <p class="mini">HARI INI HARI SPECIAL KAMU</p>
+
+        <h1>Happy<br><span>Birthday!</span></h1>
+
+        <h2>Dari Orang Tersayang 💖</h2>
+
+        <p>
+            Hari ini bukan sekadar tanggal biasa.
+            Hari ini adalah hari ketika seseorang
+            yang luar biasa lahir ke dunia.
+        </p>
+
+        <button onclick="scrollToSection('countdown')">
+            Explore Your Surprise ↓
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- COUNTDOWN -->
+
+<section class="section" id="countdown">
+
+    <p class="mini">COUNTING DOWN</p>
+
+    <h2>Until Your Special Day 🎂</h2>
+
+    <div class="timer">
+
+        <div>
+            <strong id="days">00</strong>
+            <span>Days</span>
+        </div>
+
+        <div>
+            <strong id="hours">00</strong>
+            <span>Hours</span>
+        </div>
+
+        <div>
+            <strong id="minutes">00</strong>
+            <span>Minutes</span>
+        </div>
+
+        <div>
+            <strong id="seconds">00</strong>
+            <span>Seconds</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- MEMORY -->
+
+<section class="section">
+
+    <p class="mini">LITTLE MEMORIES</p>
+
+    <h2>Some Beautiful Moments 📸</h2>
+
+    <div class="gallery">
+
+        <div class="card">
+            <img src="fto 1.jpg">
+            <span>Beautiful moment ✨</span>
+        </div>
+
+        <div class="card">
+            <img src="fto 2.jpg">
+            <span>Another memory 💕</span>
+        </div>
+
+        <div class="card">
+            <img src="fto 3.jpg">
+            <span>Best day ever 🌷</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- LETTER -->
+
+<section class="section letter-section">
+
+    <p class="mini">A MESSAGE FOR YOU</p>
+
+    <h2>Open My Letter 💌</h2>
+
+    <div class="envelope" id="envelope">
+
+        <div class="paper">
+
+            <h3>Dear Birthday Star ✨</h3>
+
+            <p>
+                Sugeng ambal warsa den baguskuu!!
+            </p>
+
+            <p>
+              sehat terus nggih, diparingi rezeki
+              lancar, tambah dewasa,
+              Dadi pribadi sing luweh apik, 
+              luweh sabar neh ngadepi aku.
+            </p>
+
+            <p>
+                eling-eling gih sayang.. 
+                ora kabeh perjuangan kui bakal e
+                sia - sia aku nde kne baturi sampean
+                ojo patah semangat ya sayang.
+            </p>
+
+            <b>Happy Birthday! 🎂❤️</b>
+
+        </div>
+
+        <div class="envelope-body"></div>
+        <div class="flap"></div>
+
+    </div>
+
+    <button onclick="openLetter()">
+        💌 Buka Kartu
+    </button>
+
+</section>
+
+
+<!-- CAKE -->
+
+<section class="section cake-section">
+
+    <p class="mini">BUAT PERMOHONAN</p>
+
+    <h2>It's Cake Time! 🎂</h2>
+
+    <div class="cake">
+
+        <div class="candle">
+            <div class="fire"></div>
+        </div>
+
+        <div class="cake-top"></div>
+
+        <div class="cake-body">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </div>
+
+    </div>
+
+    <p>
+        Klik kue untuk meniup lilinnya ✨
+    </p>
+
+</section>
+
+
+<!-- FINAL -->
+
+<section class="final">
+
+    <div class="big-heart">♥</div>
+
+    <h1>Happy Birthday!</h1>
+
+    <p>
+        Sugeng ambal warsa nggih sayangku, 
+        Sehat sehat ndek sana.
+        Kanggo kabeh usahane pean mbahagiakna aku. 
+        Mugo mugo dadi lancare dalan rejeki nggeh mas 
+        Dongaku ora pernah putus kanggo sampean.
+        Makasih ya sampun purun lan sabar
+        ngancani cah edok sing ribet dan rewelan kyok aku.
+    </p>
+
+    <h2>Ucapan Dariku ✨</h2>
+
+</section>
+
+</main>
+
+
+<!-- PARTICLES -->
+
+<div id="particles"></div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
